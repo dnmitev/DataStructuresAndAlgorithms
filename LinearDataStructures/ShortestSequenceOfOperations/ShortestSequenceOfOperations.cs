@@ -11,14 +11,38 @@ namespace ShortestSequenceOfOperations
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    
-    class ShortestSequenceOfOperations
+
+    internal class ShortestSequenceOfOperations
     {
-        static void Main()
+        private static void Main()
         {
-            // TODO: Implement :)
+            Console.Write("Enter sequence start: ");
+            int n = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter sequence end: ");
+            int m = int.Parse(Console.ReadLine());
+
+            var stack = new Stack<int>();
+            stack.Push(m);
+            while (m / 2 >= n)
+            {
+                m = m / 2;
+                stack.Push(m);
+            }
+
+            while (m - 2 >= n)
+            {
+                m = m - 2;
+                stack.Push(m);
+            }
+
+            while (m - 1 >= n)
+            {
+                m = m - 1;
+                stack.Push(m);
+            }
+
+            Console.WriteLine(string.Join(" -> ", stack));
         }
     }
 }
