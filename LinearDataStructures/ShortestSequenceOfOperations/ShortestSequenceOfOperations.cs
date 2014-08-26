@@ -36,7 +36,7 @@ namespace ShortestSequenceOfOperations
                 stack.Push(m);
             }
 
-            while (m - 1 >= n)
+            while (m - 3 >= n)
             {
                 m = m - 1;
                 stack.Push(m);

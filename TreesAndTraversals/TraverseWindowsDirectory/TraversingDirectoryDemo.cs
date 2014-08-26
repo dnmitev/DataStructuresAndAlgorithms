@@ -5,15 +5,16 @@ namespace TraverseWindowsDirectory
 {
     using System;
     using System.Collections.Generic;
+    using System.IO;
     using System.Linq;
     using System.Text;
-    using System.Threading.Tasks;
-    using System.IO;
 
-    class TraversingDirectoryDemo
+    internal class TraversingDirectoryDemo
     {
-        static void Main()
+        private static void Main()
         {
+            // the main directory string is set in the .settings file beceause later it can be changed without 
+            // rebuilding the API
             var mainDirectory = new DirectoryInfo(TraverseDirectorySettings.Default.DirString).EnumerateDirectories("*");
             var allExeFiles = GetAllExeFiles(mainDirectory);
 
@@ -32,11 +33,13 @@ namespace TraverseWindowsDirectory
 
                     foreach (var file in files)
                     {
-                        filesList.AppendLine(file.Name);
+                        filesList.AppendLine(string.Format("\t{0}", file.Name));
                     }
                 }
                 catch (UnauthorizedAccessException)
                 {
+                    // since its Windows folder some .exe files must have special permissions to be listed 
+                    // and in this metter the .NET throws an exception which is handled here
                     continue;
                 }
             }
