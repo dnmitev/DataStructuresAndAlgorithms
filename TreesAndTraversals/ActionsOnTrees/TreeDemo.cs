@@ -62,24 +62,80 @@ namespace ActionsOnTrees
             Console.WriteLine();
 
             // d)   the longest path in the tree
-            var longestPath = GetLongestPath(root);
+            var longestPath = GetLongestPath(nodes);
             Console.WriteLine("The longest path is: {0}", longestPath);
+
+            //// e)   * all paths in the tree with given sum S of their nodes
+            //Console.Write("Find all paths with sum: ");
+            //int givenSum = int.Parse(Console.ReadLine());
+
+            //GetAllPathsWithGivenSum(root, givenSum);
+            ////foreach (var path in paths)
+            ////{
+            ////    Console.WriteLine(string.Join(" -> ",path));
+            ////}
         }
 
-        private static int GetLongestPath(Node<int> root)
+        private static void GetAllPathsWithGivenSum(Node<int> root, int givenSum)
+        {
+
+            if (root == null)
+            {
+                return;
+            }
+
+            int sum = 0;
+            Node<int> child = null;
+            var list = new List<int>();
+            for (int i = 0; i < root.Children.Count; i++)
+            {
+                child = root.Children[i];
+
+                if (child.Value == givenSum)
+                {
+                    Console.WriteLine(child.Value);
+                }
+
+                sum += child.Value;
+                list.Add(child.Value);
+
+                if (sum == child.Value)
+                {
+                    Console.WriteLine(string.Join(" -> ", list));
+                }
+                GetAllPathsWithGivenSum(child, givenSum);
+            }
+        }
+
+        private static int GetLongestPath(Node<int>[] nodes)
+        {
+            var paths = new List<int>();
+            var root = GetRoot(nodes);
+            foreach (var child in root.Children)
+            {
+                paths.Add(GetTreeHeight(child));
+            }
+
+            paths = paths.OrderByDescending(x => x).ToList();
+            int maxPath = paths[0] + paths[1] + 1;
+
+            return maxPath;
+        }
+
+        private static int GetTreeHeight(Node<int> root)
         {
             if (root.Children.Count == 0)
             {
-                return 0;
+                return 1;
             }
 
-            int maxPath = 0;
+            int height = 0;
             foreach (var node in root.Children)
             {
-                maxPath = Math.Max(maxPath, GetLongestPath(node));
+                height = Math.Max(height, GetTreeHeight(node));
             }
 
-            return maxPath + 1;
+            return height + 1;
         }
 
         private static List<Node<int>> GetMiddleNodes(Node<int>[] nodes)
