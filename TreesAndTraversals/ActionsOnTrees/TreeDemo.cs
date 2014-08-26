@@ -64,47 +64,6 @@ namespace ActionsOnTrees
             // d)   the longest path in the tree
             var longestPath = GetLongestPath(nodes);
             Console.WriteLine("The longest path is: {0}", longestPath);
-
-            //// e)   * all paths in the tree with given sum S of their nodes
-            //Console.Write("Find all paths with sum: ");
-            //int givenSum = int.Parse(Console.ReadLine());
-
-            //GetAllPathsWithGivenSum(root, givenSum);
-            ////foreach (var path in paths)
-            ////{
-            ////    Console.WriteLine(string.Join(" -> ",path));
-            ////}
-        }
-
-        private static void GetAllPathsWithGivenSum(Node<int> root, int givenSum)
-        {
-
-            if (root == null)
-            {
-                return;
-            }
-
-            int sum = 0;
-            Node<int> child = null;
-            var list = new List<int>();
-            for (int i = 0; i < root.Children.Count; i++)
-            {
-                child = root.Children[i];
-
-                if (child.Value == givenSum)
-                {
-                    Console.WriteLine(child.Value);
-                }
-
-                sum += child.Value;
-                list.Add(child.Value);
-
-                if (sum == child.Value)
-                {
-                    Console.WriteLine(string.Join(" -> ", list));
-                }
-                GetAllPathsWithGivenSum(child, givenSum);
-            }
         }
 
         private static int GetLongestPath(Node<int>[] nodes)
