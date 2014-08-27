@@ -96,11 +96,14 @@ namespace CustomHashTable
             var hash = this.GetHash(key);
             var list = this.values[hash];
 
-            foreach (var pair in list)
+            if (list != null)
             {
-                if (pair.Key.Equals(key))
+                foreach (var pair in list)
                 {
-                    return pair.Value;
+                    if (pair.Key.Equals(key))
+                    {
+                        return pair.Value;
+                    }
                 }
             }
 
@@ -112,13 +115,16 @@ namespace CustomHashTable
             var hash = this.GetHash(key);
             var list = this.values[hash];
 
-            foreach (var pair in list)
+            if (list != null)
             {
-                if (pair.Key.Equals(key))
+                foreach (var pair in list)
                 {
-                    list.Remove(pair);
-                    this.Count--;
-                    break;
+                    if (pair.Key.Equals(key))
+                    {
+                        list.Remove(pair);
+                        this.Count--;
+                        break;
+                    }
                 }
             }
         }
