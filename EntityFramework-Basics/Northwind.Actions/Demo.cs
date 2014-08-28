@@ -6,6 +6,7 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using System.Transactions;
 
     public class Demo
     {
@@ -39,6 +40,19 @@
             foreach (var sale in sales)
             {
                 Console.WriteLine(sale);
+            }
+
+            using (var transactionScope = new TransactionScope())
+            {
+                using (var db = new NorthwindEntities())
+                {
+                    for (int i = 0; i < 5; i++)
+                    {
+                        OrdersDao.InsertOrder("Bat Joro" + i, i + " ,Mariika Str", "Kaspichan", "Tam-Nyakude", "AZDA", "Bulgaria");
+                    }
+                }
+
+                transactionScope.Complete();
             }
         }
     }
