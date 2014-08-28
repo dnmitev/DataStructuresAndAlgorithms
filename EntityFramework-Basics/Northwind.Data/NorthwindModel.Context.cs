@@ -228,5 +228,22 @@ namespace Northwind.Data
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Ten_Most_Expensive_Products_Result>("Ten_Most_Expensive_Products");
         }
+    
+        public virtual ObjectResult<Nullable<decimal>> usp_GetTotalIncome(string supplierName, Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate)
+        {
+            var supplierNameParameter = supplierName != null ?
+                new ObjectParameter("supplierName", supplierName) :
+                new ObjectParameter("supplierName", typeof(string));
+    
+            var startDateParameter = startDate.HasValue ?
+                new ObjectParameter("startDate", startDate) :
+                new ObjectParameter("startDate", typeof(System.DateTime));
+    
+            var endDateParameter = endDate.HasValue ?
+                new ObjectParameter("endDate", endDate) :
+                new ObjectParameter("endDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<decimal>>("usp_GetTotalIncome", supplierNameParameter, startDateParameter, endDateParameter);
+        }
     }
 }
