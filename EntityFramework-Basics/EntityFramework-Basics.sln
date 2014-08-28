@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Actions", "Northw
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindTwin", "NorthwindTwin\NorthwindTwin.csproj", "{530E86A9-8AA2-4CB9-9B3D-F309D34D283E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindConcurentChanges", "NorthwindConcurentChanges\NorthwindConcurentChanges.csproj", "{9C0F9A0E-DBEF-4B86-A5F5-D48F14D8AA8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{530E86A9-8AA2-4CB9-9B3D-F309D34D283E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{530E86A9-8AA2-4CB9-9B3D-F309D34D283E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{530E86A9-8AA2-4CB9-9B3D-F309D34D283E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C0F9A0E-DBEF-4B86-A5F5-D48F14D8AA8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C0F9A0E-DBEF-4B86-A5F5-D48F14D8AA8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C0F9A0E-DBEF-4B86-A5F5-D48F14D8AA8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C0F9A0E-DBEF-4B86-A5F5-D48F14D8AA8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
