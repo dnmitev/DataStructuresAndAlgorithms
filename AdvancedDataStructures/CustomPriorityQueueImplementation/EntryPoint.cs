@@ -6,7 +6,7 @@ namespace CustomPriorityQueueImplementation
     using System.Collections.Generic;
     using System.Linq;
 
-    internal class Program
+    internal class EntryPoint
     {
         private static void Main()
         {
