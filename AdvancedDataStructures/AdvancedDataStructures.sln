@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.CustomPriorityQueueImple
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.MyBagIsBetterThanYourBag", "MyBagIsBetterThanYourBag\02.MyBagIsBetterThanYourBag.csproj", "{3238E14B-DC48-45B0-B628-C4EDB440A49A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.AdvacedWordSearching", "AdvacedWordSearching\03.AdvacedWordSearching.csproj", "{C1009F90-DB27-4FE8-83C4-572B2B32D3CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3238E14B-DC48-45B0-B628-C4EDB440A49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3238E14B-DC48-45B0-B628-C4EDB440A49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3238E14B-DC48-45B0-B628-C4EDB440A49A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1009F90-DB27-4FE8-83C4-572B2B32D3CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1009F90-DB27-4FE8-83C4-572B2B32D3CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1009F90-DB27-4FE8-83C4-572B2B32D3CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1009F90-DB27-4FE8-83C4-572B2B32D3CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
