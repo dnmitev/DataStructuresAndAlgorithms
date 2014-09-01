@@ -48,7 +48,7 @@ namespace Articles
             }
             sw.Stop();
 
-            Console.WriteLine("Time elaapsed to store 1 500 000 reci=ords: {0}",sw.Elapsed);
+            Console.WriteLine("Time elapsed to store 1 500 000 reci=ords: {0}",sw.Elapsed);
 
             sw.Reset();
             sw.Start();
