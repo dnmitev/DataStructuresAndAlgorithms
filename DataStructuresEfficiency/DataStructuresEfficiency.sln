@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseDirectory", "CourseDirectory\CourseDirectory.csproj", "{36B3C785-32DC-4A6B-AD4B-84A3B79865BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. CourseDirectory", "CourseDirectory\01. CourseDirectory.csproj", "{36B3C785-32DC-4A6B-AD4B-84A3B79865BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Articles", "Articles\02. Articles.csproj", "{A44E36B8-C143-4416-A31A-69CE96F50C6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{36B3C785-32DC-4A6B-AD4B-84A3B79865BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36B3C785-32DC-4A6B-AD4B-84A3B79865BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36B3C785-32DC-4A6B-AD4B-84A3B79865BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A44E36B8-C143-4416-A31A-69CE96F50C6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44E36B8-C143-4416-A31A-69CE96F50C6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44E36B8-C143-4416-A31A-69CE96F50C6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44E36B8-C143-4416-A31A-69CE96F50C6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
