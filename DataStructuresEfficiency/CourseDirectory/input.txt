@@ -1,0 +1,11 @@
+Kiril  | Ivanov   | C#
+Stefka | Nikolova | SQL
+Stela  | Mineva   | Java
+Milena | Petrova  | C#
+Ivan   | Grigorov | C#
+Ivan   | Kolev    | SQL
+Dimitar | Dimitrov | C#
+Radko | Radkov | Java
+Pesho | Peshev | SQL
+Maria | Georgieva | Java
+Gergana | Petrova | C#
