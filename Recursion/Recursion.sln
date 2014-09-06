@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Permutations", "Permuta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. OrderedSubset", "OrderedSubset\05. OrderedSubset.csproj", "{7BF00B1A-C1DB-43FA-8E8E-E9D21119293B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. AllSubsetsOfGivenStrings", "AllSubsetsOfGivenStrings\06. AllSubsetsOfGivenStrings.csproj", "{2EF9BF76-9A16-4DB5-A051-8C7CDF396A13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7BF00B1A-C1DB-43FA-8E8E-E9D21119293B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BF00B1A-C1DB-43FA-8E8E-E9D21119293B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BF00B1A-C1DB-43FA-8E8E-E9D21119293B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EF9BF76-9A16-4DB5-A051-8C7CDF396A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EF9BF76-9A16-4DB5-A051-8C7CDF396A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EF9BF76-9A16-4DB5-A051-8C7CDF396A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EF9BF76-9A16-4DB5-A051-8C7CDF396A13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
