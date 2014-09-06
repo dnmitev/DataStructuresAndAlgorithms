@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. AllSubsetsOfGivenString
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. AllPathsInLabyrinth", "AllPathsInLabyrinth\07. AllPathsInLabyrinth.csproj", "{F51380CD-3D2A-414C-8AC9-96FD30B73DB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. AvailablePathBetweenCells", "AvailablePathBetweenCells\08. AvailablePathBetweenCells.csproj", "{0C55FEAD-0F13-4FF4-A7FF-81AE0F90B509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. LargestArea", "LargestArea\09. LargestArea.csproj", "{76EE4A11-F4E2-4DFD-B5A2-26C4C68AE3FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{F51380CD-3D2A-414C-8AC9-96FD30B73DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F51380CD-3D2A-414C-8AC9-96FD30B73DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F51380CD-3D2A-414C-8AC9-96FD30B73DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C55FEAD-0F13-4FF4-A7FF-81AE0F90B509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C55FEAD-0F13-4FF4-A7FF-81AE0F90B509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C55FEAD-0F13-4FF4-A7FF-81AE0F90B509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C55FEAD-0F13-4FF4-A7FF-81AE0F90B509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76EE4A11-F4E2-4DFD-B5A2-26C4C68AE3FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76EE4A11-F4E2-4DFD-B5A2-26C4C68AE3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76EE4A11-F4E2-4DFD-B5A2-26C4C68AE3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76EE4A11-F4E2-4DFD-B5A2-26C4C68AE3FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

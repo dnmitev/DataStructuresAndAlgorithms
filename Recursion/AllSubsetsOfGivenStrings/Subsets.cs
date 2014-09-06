@@ -6,7 +6,7 @@ namespace AllSubsetsOfGivenStrings
     using System;
     using System.Linq;
 
-    internal class Program
+    internal class Subsets
     {
         private static void Main()
         {

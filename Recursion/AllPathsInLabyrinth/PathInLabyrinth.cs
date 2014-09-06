@@ -6,21 +6,10 @@ namespace AllPathsInLabyrinth
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
-    class PathInLabyrinth
+    internal class PathInLabyrinth
     {
-        const char ExitChar = 'e';
-        const char ClearPath = ' ';
-        const char VisitedCell = 'v';
-
-        const char Up = 'U';
-        const char Down = 'D';
-        const char Left = 'L';
-        const char Right = 'R';
-
-        static char[,] maze = 
+        private static readonly char[,] maze =
         {
             { ' ', ' ', ' ', '*', ' ', ' ', ' ' },
             { '*', '*', ' ', '*', ' ', '*', ' ' },
@@ -29,9 +18,18 @@ namespace AllPathsInLabyrinth
             { ' ', ' ', ' ', ' ', ' ', ' ', 'e' },
         };
 
-        static Stack<char> path = new Stack<char>();
+        private static readonly Stack<char> path = new Stack<char>();
 
-        static void Main()
+        private const char ExitChar = 'e';
+        private const char ClearPath = ' ';
+        private const char VisitedCell = 'v';
+
+        private const char Up = 'U';
+        private const char Down = 'D';
+        private const char Left = 'L';
+        private const char Right = 'R';
+
+        private static void Main()
         {
             FindPathToExit(0, 0, 'S');
         }
@@ -47,10 +45,10 @@ namespace AllPathsInLabyrinth
 
             if (maze[row, col] == ExitChar)
             {
-                Console.WriteLine(string.Join(" -> ",path));
+                Console.WriteLine(string.Join(" -> ", path));
             }
 
-            if (maze[row,col] == ClearPath)
+            if (maze[row, col] == ClearPath)
             {
                 // temporarily mark current cell as visited
                 maze[row, col] = VisitedCell;
@@ -58,7 +56,7 @@ namespace AllPathsInLabyrinth
                 FindPathToExit(row + 1, col, Down);
                 FindPathToExit(row - 1, col, Up);
                 FindPathToExit(row, col + 1, Right);
-                FindPathToExit(row, col-1, Left);
+                FindPathToExit(row, col - 1, Left);
 
                 maze[row, col] = ClearPath;
             }

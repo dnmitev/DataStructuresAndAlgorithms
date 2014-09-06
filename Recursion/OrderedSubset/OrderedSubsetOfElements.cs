@@ -4,14 +4,11 @@
 namespace OrderedSubset
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
-    class OrderedSubsetOfElements
+    internal class OrderedSubsetOfElements
     {
-        static void Main()
+        private static void Main()
         {
             Console.Write("n = ");
             int n = int.Parse(Console.ReadLine());
@@ -35,7 +32,7 @@ namespace OrderedSubset
         {
             if (index == output.Length)
             {
-                Console.WriteLine(string.Join(" ",output));
+                Console.WriteLine(string.Join(" ", output));
                 return;
             }
 

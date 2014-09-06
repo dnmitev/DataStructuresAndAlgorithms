@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2EF9BF76-9A16-4DB5-A051-8C7CDF396A13}</ProjectGuid>
+    <ProjectGuid>{76EE4A11-F4E2-4DFD-B5A2-26C4C68AE3FD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AllSubsetsOfGivenStrings</RootNamespace>
-    <AssemblyName>AllSubsetsOfGivenStrings</AssemblyName>
+    <RootNamespace>LargestArea</RootNamespace>
+    <AssemblyName>LargestArea</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Subsets.cs" />
+    <Compile Include="LargestArea.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
