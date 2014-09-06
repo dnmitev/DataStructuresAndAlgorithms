@@ -3,14 +3,11 @@
 namespace NestedLoops
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
-    class NestedLoopsWithRecursion
+    internal class NestedLoopsWithRecursion
     {
-        static void Main()
+        private static void Main()
         {
             Console.Write("n = ");
             int number = int.Parse(Console.ReadLine());
