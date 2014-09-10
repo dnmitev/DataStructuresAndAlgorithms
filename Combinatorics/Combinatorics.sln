@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryPasswords", "BinaryPasswords\BinaryPasswords.csproj", "{ADB0689E-A0B7-488A-9AEA-D09C0D6B24E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryPasswords.Tests", "BinaryPasswords.Tests\BinaryPasswords.Tests.csproj", "{48C4904D-F833-4BE7-A5F9-7191373414E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BinaryPasswords", "BinaryPasswords", "{C936F421-6F81-462C-8F12-105E4D23E242}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SetOfColorfullBalls", "SetOfColorfullBalls", "{B610CB5D-B8D4-476F-83CD-F843DF8D60D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetOfBalls.Tests", "SetOfBalls.Tests\SetOfBalls.Tests.csproj", "{5DE834A9-E6D0-49AE-B6D3-5D6241136106}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetOfBalls", "SetOfBalls\SetOfBalls.csproj", "{21E73A42-1377-4382-B83D-3B7E18F613AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADB0689E-A0B7-488A-9AEA-D09C0D6B24E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB0689E-A0B7-488A-9AEA-D09C0D6B24E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB0689E-A0B7-488A-9AEA-D09C0D6B24E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB0689E-A0B7-488A-9AEA-D09C0D6B24E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C4904D-F833-4BE7-A5F9-7191373414E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C4904D-F833-4BE7-A5F9-7191373414E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C4904D-F833-4BE7-A5F9-7191373414E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C4904D-F833-4BE7-A5F9-7191373414E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE834A9-E6D0-49AE-B6D3-5D6241136106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE834A9-E6D0-49AE-B6D3-5D6241136106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE834A9-E6D0-49AE-B6D3-5D6241136106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE834A9-E6D0-49AE-B6D3-5D6241136106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E73A42-1377-4382-B83D-3B7E18F613AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E73A42-1377-4382-B83D-3B7E18F613AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E73A42-1377-4382-B83D-3B7E18F613AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E73A42-1377-4382-B83D-3B7E18F613AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ADB0689E-A0B7-488A-9AEA-D09C0D6B24E3} = {C936F421-6F81-462C-8F12-105E4D23E242}
+		{48C4904D-F833-4BE7-A5F9-7191373414E6} = {C936F421-6F81-462C-8F12-105E4D23E242}
+		{5DE834A9-E6D0-49AE-B6D3-5D6241136106} = {B610CB5D-B8D4-476F-83CD-F843DF8D60D3}
+		{21E73A42-1377-4382-B83D-3B7E18F613AE} = {B610CB5D-B8D4-476F-83CD-F843DF8D60D3}
+	EndGlobalSection
+EndGlobal

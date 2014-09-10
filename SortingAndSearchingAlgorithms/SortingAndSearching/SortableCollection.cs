@@ -81,7 +81,7 @@
             {
                 int randomIndex = randomGenerator.Next(0, i);
 
-                T swap = this.items[randomIndex];
+                T swap = this.items[i];
                 this.items[i] = this.items[randomIndex];
                 this.items[randomIndex] = swap;
             }
